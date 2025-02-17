@@ -29,9 +29,7 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
-                  Resume
-                </NavLink>
+                <NavLink href="/files/resume.pdf">Resume</NavLink>
                 <NavLink href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
                   Publications
                 </NavLink>
