@@ -3,47 +3,48 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import imgNaoObedience from '@/images/robot-authority-big.png'
+import imgTrust from '@/images/robot-trust.jpg'
+import imgProxemics from '@/images/proxemics.jpg'
+import imgIcons from '@/images/Icons-for-children.jpg'
 
 const projects = [
   {
-    name: 'Planetaria',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    name: 'Obedience to Robots',
+    description: 'Do people obey robots in positions of authority?',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/would-you-do-as-a-robot-commands',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgNaoObedience,
   },
   {
-    name: 'Animaginary',
+    name: "Children's Trust Towards Robots",
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      "Experiments exploring children's trust towards robot with different attributes.",
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/childrens-trust-towards-robots',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgTrust,
   },
   {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    name: 'Human-Robot Proxemics',
+    description: 'Does seating arrangement affect perceptions of a robot?',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/human-robot-proxemics',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgProxemics,
   },
   {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+    name: 'Icons for children',
+    description: 'User-centered design of app icons for children.',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/publications/details/icons-for-kids-can-young-children-understand-graphical-representations-of-a',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgIcons,
   },
 ]
 
@@ -75,11 +76,11 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white ring-1 shadow-md shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex items-center justify-center overflow-hidden rounded-sm bg-white ring-1 shadow-md shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
-                src={project.logo}
+                src={project.img}
                 alt=""
-                className="h-8 w-8"
+                className="aspect-[4/2.5] w-full object-cover object-center"
                 unoptimized
               />
             </div>
@@ -87,7 +88,7 @@ export default function Projects() {
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-purple-500 dark:text-zinc-200">
               <LinkIcon className="h-6 w-6 flex-none" />
               <span className="ml-2">{project.link.label}</span>
             </p>

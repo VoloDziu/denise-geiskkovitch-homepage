@@ -70,10 +70,13 @@ export default function About() {
             <p>
               I am an assistant professor in the Department of Computing and
               Software, and the Barber Gennum Chair in Information Technology at
-              McMaster University. My research centres focuses on designing
-              robot behaviours for meaninful interaction with adults and
-              children. I am also interested in how unexpected robot behaviours
-              (such as errors) impact human-robot interaction.
+              McMaster University.
+            </p>
+            <p>
+              My research centres focuses on designing robot behaviours for
+              meaninful interaction with adults and children. I am also
+              interested in how unexpected robot behaviours (such as errors)
+              impact human-robot interaction.
             </p>
             <p>I am currently accepting PhD students for Fall 2024.</p>
           </div>
