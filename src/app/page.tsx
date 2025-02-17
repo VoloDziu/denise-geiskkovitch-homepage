@@ -43,9 +43,9 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About - Denise Geiskkovitch',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'I’m Denise Geiskkovitch. I am an assistant professor in the Department of Computing and Software, and the Barber Gennum Chair in Information Technology at McMaster University.',
 }
 
 export default function About() {
