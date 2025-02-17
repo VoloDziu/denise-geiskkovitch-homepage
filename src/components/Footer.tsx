@@ -29,8 +29,12 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/resume">Resume</NavLink>
-                <NavLink href="/publications">Publications</NavLink>
+                <NavLink href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
+                  Resume
+                </NavLink>
+                <NavLink href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
+                  Publications
+                </NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Spencer Sharp. All rights
