@@ -7,6 +7,52 @@ import { Container } from '@/components/Container'
 import { LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/hero.png'
 
+import imgNaoObedience from '@/images/robot-authority-big.png'
+import imgTrust from '@/images/robot-trust.jpg'
+import imgProxemics from '@/images/proxemics.jpg'
+import imgIcons from '@/images/Icons-for-children.jpg'
+import { Card } from '@/components/Card'
+
+const projects = [
+  {
+    name: 'Obedience to Robots',
+    description: 'Do people obey robots in positions of authority?',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/would-you-do-as-a-robot-commands',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgNaoObedience,
+  },
+  {
+    name: "Children's Trust Towards Robots",
+    description:
+      "Experiments exploring children's trust towards robot with different attributes.",
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/childrens-trust-towards-robots',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgTrust,
+  },
+  {
+    name: 'Human-Robot Proxemics',
+    description: 'Does seating arrangement affect perceptions of a robot?',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/projects-and-research/details/human-robot-proxemics',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgProxemics,
+  },
+  {
+    name: 'Icons for children',
+    description: 'User-centered design of app icons for children.',
+    link: {
+      href: 'https://hci.cs.umanitoba.ca/publications/details/icons-for-kids-can-young-children-understand-graphical-representations-of-a',
+      label: 'UofM HCI Lab Website',
+    },
+    img: imgIcons,
+  },
+]
+
 function SocialLink({
   className,
   href,
@@ -108,10 +154,47 @@ export default function About() {
             <SocialLink
               href="mailto:geiskkod@mcmaster.ca"
               icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+              className="mt-4"
             >
               geiskkod@mcmaster.ca
             </SocialLink>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-20 border-t border-zinc-100 pt-30 md:mt-30 dark:border-zinc-700/40">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Things I’ve made trying to put my dent in the universe.
+          </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I’ve worked on tons of little projects over the years but these are
+            the ones that I’m most proud of. Many of them are open-source, so if
+            you see something that piques your interest, check out the code and
+            contribute if you have ideas for how it can be improved.
+          </p>
+        </div>
+        <div className="mt-16 sm:mt-20">
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {projects.map((project) => (
+              <Card as="li" key={project.name}>
+                <div className="relative z-10 flex items-center justify-center overflow-hidden rounded-sm bg-white ring-1 shadow-md shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <Image
+                    src={project.img}
+                    alt=""
+                    className="aspect-[4/2.5] w-full object-cover object-center"
+                    unoptimized
+                  />
+                </div>
+                <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                </h2>
+                <Card.Description>{project.description}</Card.Description>
+              </Card>
+            ))}
           </ul>
         </div>
       </div>
