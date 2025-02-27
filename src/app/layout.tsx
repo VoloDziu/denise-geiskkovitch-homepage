@@ -1,6 +1,7 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 
 import '@/styles/tailwind.css'
 
@@ -21,6 +22,7 @@ export default function RootLayout({
           </div>
         </Providers>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
