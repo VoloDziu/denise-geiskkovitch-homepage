@@ -120,6 +120,8 @@ function MobileNavigation(
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
             <MobileNavItem href="/">About</MobileNavItem>
+            <MobileNavItem href="/students">Students</MobileNavItem>
+            <MobileNavItem href="/consulting">Consulting</MobileNavItem>
             <MobileNavItem href="/files/resume.pdf">Resume</MobileNavItem>
             <MobileNavItem href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
               Publications
@@ -165,6 +167,8 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/">About</NavItem>
+        <NavItem href="/students">Students</NavItem>
+        <NavItem href="/consulting">Consulting</NavItem>
         <NavItem href="/files/resume.pdf">Resume</NavItem>
         <NavItem href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
           Publications
