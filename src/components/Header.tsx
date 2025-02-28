@@ -120,10 +120,11 @@ function MobileNavigation(
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
             <MobileNavItem href="/">About</MobileNavItem>
-            <MobileNavItem href="/students">Students</MobileNavItem>
-            <MobileNavItem href="/consulting">Consulting</MobileNavItem>
-            <MobileNavItem href="/files/resume.pdf">Resume</MobileNavItem>
+            <MobileNavItem href="/files/resume.pdf">CV</MobileNavItem>
             <MobileNavItem href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
+            <MobileNavItem href="/students">Prospective Students</MobileNavItem>
+            <MobileNavItem href="/consulting">Consulting</MobileNavItem>
+            
               Publications
             </MobileNavItem>
           </ul>

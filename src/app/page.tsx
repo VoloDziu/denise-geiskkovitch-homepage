@@ -132,7 +132,7 @@ export default function About() {
               interested in how unexpected robot behaviours (such as errors)
               impact human-robot interaction.
             </p>
-            <p>I am currently accepting PhD students for Fall 2024.</p>
+            <p></p>
           </div>
         </div>
         <div className="lg:pl-20">
