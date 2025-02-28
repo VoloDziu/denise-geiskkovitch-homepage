@@ -122,11 +122,12 @@ function MobileNavigation(
             <MobileNavItem href="/">About</MobileNavItem>
             <MobileNavItem href="/files/resume.pdf">CV</MobileNavItem>
             <MobileNavItem href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
-            <MobileNavItem href="/students">Prospective Students</MobileNavItem>
-            <MobileNavItem href="/consulting">Consulting</MobileNavItem>
-            
               Publications
             </MobileNavItem>
+            <MobileNavItem href="/students">
+              Prospective Grad Students
+            </MobileNavItem>
+            <MobileNavItem href="/consulting">Consulting</MobileNavItem>
           </ul>
         </nav>
       </PopoverPanel>
@@ -168,12 +169,12 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/">About</NavItem>
-        <NavItem href="/students">Students</NavItem>
-        <NavItem href="/consulting">Consulting</NavItem>
-        <NavItem href="/files/resume.pdf">Resume</NavItem>
+        <NavItem href="/files/resume.pdf">CV</NavItem>
         <NavItem href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
           Publications
         </NavItem>
+        <NavItem href="/students">Prospective&nbsp;Grad&nbsp;Students</NavItem>
+        <NavItem href="/consulting">Consulting</NavItem>
       </ul>
     </nav>
   )
