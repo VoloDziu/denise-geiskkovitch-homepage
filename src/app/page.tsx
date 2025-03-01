@@ -127,10 +127,10 @@ export default function About() {
               McMaster University.
             </p>
             <p>
-              My research Denise’s research spans Human-Computer Interaction and
-              Human-Robot Interaction, centering on understanding people’s
-              experiences with robots and learning how to design and develop
-              robots to shape such experiences.
+              My research spans Human-Computer Interaction and Human-Robot
+              Interaction, centering on understanding people’s experiences with
+              robots and learning how to design and develop robots to shape such
+              experiences.
             </p>
             <p>
               I am accepting exceptional graduate students on an ongoing basis.
