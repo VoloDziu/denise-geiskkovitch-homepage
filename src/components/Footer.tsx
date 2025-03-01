@@ -31,7 +31,7 @@ export function Footer() {
                 <NavLink href="https://scholar.google.com/citations?hl=en&user=-occ9nIAAAAJ">
                   Publications
                 </NavLink>
-                <NavLink href="/students">Prospective Grad Students</NavLink>
+                <NavLink href="/students">Future Grad Students</NavLink>
                 <NavLink href="/consulting">Consulting</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">

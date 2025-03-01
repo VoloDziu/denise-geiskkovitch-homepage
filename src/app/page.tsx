@@ -127,12 +127,14 @@ export default function About() {
               McMaster University.
             </p>
             <p>
-              My research centres focuses on designing robot behaviours for
-              meaninful interaction with adults and children. I am also
-              interested in how unexpected robot behaviours (such as errors)
-              impact human-robot interaction.
+              My research Denise’s research spans Human-Computer Interaction and
+              Human-Robot Interaction, centering on understanding people’s
+              experiences with robots and learning how to design and develop
+              robots to shape such experiences.
             </p>
-            <p></p>
+            <p>
+              I am accepting exceptional graduate students on an ongoing basis.
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
@@ -165,14 +167,9 @@ export default function About() {
       <div className="mt-20 border-t border-zinc-100 pt-30 md:mt-30 dark:border-zinc-700/40">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Things I’ve made trying to put my dent in the universe.
+            Some of my projects:
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’ve worked on tons of little projects over the years but these are
-            the ones that I’m most proud of. Many of them are open-source, so if
-            you see something that piques your interest, check out the code and
-            contribute if you have ideas for how it can be improved.
-          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400"></p>
         </div>
         <div className="mt-16 sm:mt-20">
           <ul
